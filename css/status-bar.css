@@ -1,0 +1,28 @@
+.status-bar{
+    display: flex; /* 가로로 만들기 위해서*/
+    justify-content: center; /* 딱 붙어있는 스테이터스 바 위치를 조정함*/
+    padding: 5px 3px;
+}
+
+.status-bar__column {
+    width: 33%;
+}
+
+.status-bar__column:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+
+.status-bar__column:last-child{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.status-bar__column .fa-battery-full {
+    margin: 0px 5px;
+}
+
+.status-bar__column:first-child span{
+    margin-right: 5px;
+}
